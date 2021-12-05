@@ -15,7 +15,9 @@
     }
 }
 body{
-    background-color:rgb(241, 241, 241);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); 
+    animation: anima 20s linear infinite;
+    background-size: 1000% 1000%;
     font-family: 'Oswald';
 }
 .contenedor{
@@ -323,4 +325,14 @@ iframe{
     .form .cont_title{
         margin-top: 5%;
     }
+}
+.box img{
+    border-radius: 2% 2%;
+}
+.box:hover{
+    border: 1px solid #bdbbbb;
+    background-color: white;
+    border-radius: 2% 2% 2% 2%;
+    transform: scale(1.02);
+    box-shadow: 5px 5px 5px rgb(218, 218, 218);
 }
