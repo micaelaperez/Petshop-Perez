@@ -69,59 +69,56 @@ body{
     max-width: 80%;
 }
 
-
-    .footer{
-        align-items: center;
-    }
-    .footer__title{
-        margin: 0;    
-        }
-    .productos{
+.productos{
         flex-direction: column;
         align-items: center;
     }
-    .header__logo{
+.header__logo{
         display: flex;
         flex-direction: row;
         justify-content: center;
         flex-grow: 1;
     }
-
-
-
-
-.adress{
-    grid-area: adress;
-}
-.hour{
-    grid-area: hour;
-}
-.form{
-    grid-area: form;
-}
-.adress, .hour, .form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .cont_title{
     font-size: 1.4rem;
     margin-bottom: 5%;
     margin-top: 2%;
 }
-iframe{
-    margin-top: 10%;
-    width: 60%;
-    height: auto;
-}
-
 .box img{
     border-radius: 2% 2%;
 }
 .box:hover{
     border: 1px solid #bdbbbb;
     background-color: white;
-    border-radius: 2% 2% 2% 2%;
-    transform: scale(1.02);
+    border-radius: 2%;
+    transform: scale(1.01);
     box-shadow: 5px 5px 5px rgb(218, 218, 218);
+}
+.margen{
+    margin-top: 2em;
+}
+
+@media all and (max-width:768px) {
+    .my_Title a{ 
+        font-size: 1.6rem;
+    }
+    .my_SubTytle{
+        font-size: 1.4rem;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .centrado{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .cont_title{
+        font-size: 1.6rem;
+    }
+    .margen{
+        margin-top: 3em;
+    }
 }
