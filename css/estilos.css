@@ -122,3 +122,10 @@ body{
         margin-top: 3em;
     }
 }
+@media all and (min-width:992px){
+    .collapse{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+}
