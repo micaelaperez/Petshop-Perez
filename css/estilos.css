@@ -72,6 +72,10 @@ body{
     background-color: #d88e00;
     border-color: #d88e00;
 }
+.btn-primary:hover{
+    background-color: #eba015;
+    border-color: #eba015;
+}
 .productos img{
     max-width: 80%;
 }
