@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
-
-@keyframes anima{
-    0%{
+@keyframes anima {
+    0% {
         background-position: 5% 0;
     }
-    50%{
+    50% {
         background-position: 96% 100%;
     }
-    100%{
+    100% {
         background-position: 5% 0;
     }
 }
-body{
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); 
+
+body {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
     animation: anima 20s linear infinite;
     background-size: 1000% 1000%;
     font-family: 'Oswald';
 }
-.bg-light{
-    background-color: rgb(252, 249, 249,0.6) !important;
+
+.bg-light {
+    background-color: rgb(252, 249, 249, 0.6) !important;
 }
 
-
-.active{
+.active {
     color: #d88e00 !important;
 }
 
-#banner{
+#banner {
     background-image: url(../assets/fondo.nosotros2.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -34,113 +34,152 @@ body{
     width: 100%;
     background-size: cover;
 }
-.imagen img{
+
+.imagen img {
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.color_parrafo{
-    color:rgb(248, 248, 248,0.6);
+
+.color_parrafo {
+    color: rgb(248, 248, 248, 0.6);
     font-size: 1.5rem;
-}
-.my_Title{
-    font-size: 1.2rem;
-    color:#d88e00;
-}
-.my_Title a{
-    text-decoration: none;
-    color:#000;
-    font-size: 1.5rem;
-}
-.my_SubTytle{
-    font-size: 1.3rem;
-}
-.social_network{
-    margin-right: 1em;
-}
-.social_network a{
-    text-decoration: none;
-    color:#000;
 }
 
-.rights{
+.my_Title {
+    font-size: 1.2rem;
+    color: #d88e00;
+}
+
+.my_Title a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.my_SubTytle {
+    font-size: 1.3rem;
+}
+
+.social_network {
+    margin-right: 1em;
+}
+
+.social_network a {
+    text-decoration: none;
+    color: #000;
+}
+
+.rights {
     font-size: 0.6rem;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #d88e00;
     border-color: #d88e00;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #eba015;
     border-color: #eba015;
 }
-.productos img{
+
+.box img {
     max-width: 80%;
+    border-radius: 2% 2%;
 }
 
-.productos{
-        flex-direction: column;
-        align-items: center;
-    }
-.header__logo{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-grow: 1;
-    }
-.cont_title{
+.carrito {
+    background-color: #d88e00;
+    border-color: #d88e00;
+    padding: 2%;
+}
+
+.carrito:hover {
+    background-color: #eba015;
+    border-color: #eba015;
+}
+
+.margen .box a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.box {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.cont_title {
     font-size: 1.4rem;
     margin-bottom: 5%;
     margin-top: 2%;
 }
-.box img{
+
+.box img {
     border-radius: 2% 2%;
 }
-.box:hover{
-    border: 1px solid #bdbbbb;
-    background-color: white;
-    border-radius: 2%;
-    transform: scale(1.01);
-    box-shadow: 5px 5px 5px rgb(218, 218, 218);
+
+@media all and (min-width: 768px) {
+    .box:hover {
+        border: 1px solid #bdbbbb;
+        background-color: white;
+        border-radius: 2%;
+        transform: scale(1.01);
+        box-shadow: 5px 5px 5px rgb(218, 218, 218);
+        padding: 1%;
+    }
 }
-.margen{
+
+.margen {
     margin-top: 2em;
 }
 
 @media all and (max-width:768px) {
-    .my_Title a{ 
+    .my_Title a {
         font-size: 1.7rem;
     }
-    .my_SubTytle{
+    .my_SubTytle {
         font-size: 1.5rem;
     }
-    .center{
+    .center {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .centrado{
+    .centrado {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .cont_title{
+    .cont_title {
         font-size: 1.6rem;
     }
-    .margen{
+    .margen {
         margin-top: 3em;
     }
-    .social_network{
+    .social_network {
         margin-right: 2em;
     }
-    .my_Title{
+    .my_Title {
         font-size: 1.4rem;
     }
+    .margen .box {
+        margin-bottom: 3%;
+    }
 }
-@media all and (min-width:992px){
-    .collapse{
+
+@media all and (min-width:992px) {
+    .collapse {
         display: flex;
         flex-direction: row;
         justify-content: end;
