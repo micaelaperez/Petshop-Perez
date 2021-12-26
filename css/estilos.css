@@ -1,172 +1,225 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap");
+.font-weight-extra-light {
+  font-weight: 200;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+@-webkit-keyframes anima {
+  0% {
+    background-position: 5% 0;
+  }
+  50% {
+    background-position: 96% 100%;
+  }
+  100% {
+    background-position: 5% 0;
+  }
+}
+
 @keyframes anima {
-    0% {
-        background-position: 5% 0;
-    }
-    50% {
-        background-position: 96% 100%;
-    }
-    100% {
-        background-position: 5% 0;
-    }
+  0% {
+    background-position: 5% 0;
+  }
+  50% {
+    background-position: 96% 100%;
+  }
+  100% {
+    background-position: 5% 0;
+  }
 }
 
 body {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
-    animation: anima 20s linear infinite;
-    background-size: 1000% 1000%;
-    font-family: 'Oswald';
+  background: linear-gradient(135deg, white 0%, #f3f3f3 50%, #ededed 51%, white 100%);
+  -webkit-animation: anima 20s linear infinite;
+          animation: anima 20s linear infinite;
+  background-size: 1000% 1000%;
+  font-family: 'Oswald';
 }
 
 .bg-light {
-    background-color: rgb(252, 249, 249, 0.6) !important;
+  background-color: rgba(252, 249, 249, 0.6) !important;
 }
 
-.active {
-    color: #d88e00 !important;
-}
-
-#banner {
-    background-image: url(../assets/fondo.nosotros2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
+.bg-light .active {
+  color: #d88e00 !important;
 }
 
 .imagen img {
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.color_parrafo {
-    color: rgb(248, 248, 248, 0.6);
-    font-size: 1.5rem;
-}
-
-.my_Title {
-    font-size: 1.2rem;
-    color: #d88e00;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .my_Title a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media all and (max-width: 768px) {
+  .my_Title a {
+    font-size: 1.7rem;
+  }
 }
 
 .my_SubTytle {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
-.social_network {
-    margin-right: 1em;
+@media all and (max-width: 768px) {
+  .my_SubTytle {
+    font-size: 1.5rem;
+  }
 }
 
-.social_network a {
-    text-decoration: none;
-    color: #000;
+#footer .follow p {
+  color: #d88e00;
+  font-size: 1.3rem;
 }
 
-.rights {
-    font-size: 0.6rem;
+@media all and (max-width: 768px) {
+  #footer .follow p {
+    font-size: 1.5rem;
+  }
 }
 
-.btn-primary {
-    background-color: #d88e00;
-    border-color: #d88e00;
-    border-radius: 0;
-}
-
-.btn-primary:hover {
-    background-color: #eba015;
-    border-color: #eba015;
-}
-
-.btn-primary:focus {
-    background-color: #eba015;
-    border-color: #eba015;
-    box-shadow: none;
-}
-
-.box img {
-    max-width: 80%;
-    border-radius: 2% 2%;
-}
-
-.margen .box a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-.box {
-    flex-direction: column;
-    align-items: center;
-}
-
-.header__logo {
+@media all and (max-width: 768px) {
+  #footer .follow {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-grow: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.cont_title {
-    font-size: 1.4rem;
-    margin-bottom: 5%;
-    margin-top: 2%;
+#footer .social_network li {
+  margin-right: 1em;
 }
 
-.box img {
-    border-radius: 2% 2%;
+@media all and (max-width: 768px) {
+  #footer .social_network li {
+    margin-bottom: 1em;
+  }
+}
+
+#footer .social_network li a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media all and (max-width: 768px) {
+  #footer .social_network {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#footer .rights {
+  font-size: 0.6rem;
+}
+
+@media all and (max-width: 768px) {
+  #footer .rights {
+    font-size: 0.8rem;
+  }
 }
 
 .margen {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
-@media all and (max-width:768px) {
-    .my_Title a {
-        font-size: 1.7rem;
-    }
-    .my_SubTytle {
-        font-size: 1.5rem;
-    }
-    .center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .centrado {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .cont_title {
-        font-size: 1.6rem;
-    }
-    .margen {
-        margin-top: 3em;
-    }
-    .social_network {
-        margin-right: 2em;
-    }
-    .my_Title {
-        font-size: 1.4rem;
-    }
-    .margen .box {
-        margin-bottom: 3%;
-    }
+@media all and (max-width: 768px) {
+  .margen .box {
+    margin-bottom: 3%;
+  }
 }
 
-@media all and (min-width:992px) {
-    .collapse {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-    }
+.margen .box img {
+  max-width: 80%;
+  border-radius: 2% 2%;
 }
+
+.margen .btn-primary {
+  background-color: #d88e00;
+  border-color: #d88e00;
+}
+
+.margen .btn-primary:hover {
+  background-color: #eba015;
+  border-color: #eba015;
+}
+
+#banner {
+  background-image: url(../assets/fondo.nosotros2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+#banner .color_parrafo {
+  color: rgba(248, 248, 248, 0.6);
+  font-size: 1.5rem;
+}
+
+.cont_title {
+  color: #d88e00;
+  font-size: 1.3rem;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+@media all and (max-width: 768px) {
+  .cont_title {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

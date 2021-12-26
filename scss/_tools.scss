@@ -1,0 +1,4 @@
+@mixin follow($c: $mainColor, $f:$fontSize){
+    color: $c;
+    font-size: $f;
+}
