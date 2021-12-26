@@ -79,6 +79,7 @@ body {
 .btn-primary {
     background-color: #d88e00;
     border-color: #d88e00;
+    border-radius: 0;
 }
 
 .btn-primary:hover {
@@ -86,20 +87,15 @@ body {
     border-color: #eba015;
 }
 
+.btn-primary:focus {
+    background-color: #eba015;
+    border-color: #eba015;
+    box-shadow: none;
+}
+
 .box img {
     max-width: 80%;
     border-radius: 2% 2%;
-}
-
-.carrito {
-    background-color: #d88e00;
-    border-color: #d88e00;
-    padding: 2%;
-}
-
-.carrito:hover {
-    background-color: #eba015;
-    border-color: #eba015;
 }
 
 .margen .box a {
@@ -127,17 +123,6 @@ body {
 
 .box img {
     border-radius: 2% 2%;
-}
-
-@media all and (min-width: 768px) {
-    .box:hover {
-        border: 1px solid #bdbbbb;
-        background-color: white;
-        border-radius: 2%;
-        transform: scale(1.01);
-        box-shadow: 5px 5px 5px rgb(218, 218, 218);
-        padding: 1%;
-    }
 }
 
 .margen {
