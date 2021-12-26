@@ -181,6 +181,12 @@ body {
   border-color: #eba015;
 }
 
+@media all and (max-width: 768px) {
+  .margen .enviar {
+    margin-bottom: 2em;
+  }
+}
+
 #banner {
   background-image: url(../assets/fondo.nosotros2.jpg);
   background-repeat: no-repeat;
