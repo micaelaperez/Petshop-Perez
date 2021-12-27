@@ -101,10 +101,17 @@ body{
                 max-width: 80%;
                 border-radius: 2% 2%;
             }
+            .modal-header{
+                border-bottom: 0;
+            }
+            .modal-footer{
+                border-top: 0;
+            }
         }
-        .btn-primary{
+        .btn-warning{
             background-color: #d88e00;
             border-color: #d88e00;
+            color:#fff;
             &:hover{
                 background-color: #eba015;
                 border-color: #eba015;

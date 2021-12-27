@@ -177,12 +177,21 @@ body {
   border-radius: 2% 2%;
 }
 
-.margen .btn-primary {
-  background-color: #d88e00;
-  border-color: #d88e00;
+.margen .box .modal-header {
+  border-bottom: 0;
 }
 
-.margen .btn-primary:hover {
+.margen .box .modal-footer {
+  border-top: 0;
+}
+
+.margen .btn-warning {
+  background-color: #d88e00;
+  border-color: #d88e00;
+  color: #fff;
+}
+
+.margen .btn-warning:hover {
   background-color: #eba015;
   border-color: #eba015;
 }
