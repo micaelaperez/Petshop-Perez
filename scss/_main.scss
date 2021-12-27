@@ -70,6 +70,9 @@ body{
             @media all and (max-width:$point-md){
                 margin-bottom: 1em;            
             }
+            @media all and (min-width:$point-md){
+                padding-right: 1em;            
+            }
             a{
                 text-decoration: none;
                 color: $enlaceColor;

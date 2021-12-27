@@ -126,6 +126,12 @@ body {
   }
 }
 
+@media all and (min-width: 768px) {
+  #footer .social_network li {
+    padding-right: 1em;
+  }
+}
+
 #footer .social_network li a {
   text-decoration: none;
   color: #000;
