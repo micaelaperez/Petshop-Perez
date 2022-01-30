@@ -1,150 +1,160 @@
-@each $k, $v in $font-weights{
-    .font-weight-#{$k}{
+@each $k, $v in $font-weights {
+    .font-weight-#{$k} {
         font-weight: $v;
     }
 }
-@keyframes anima{
-    0%{
+@keyframes anima {
+    0% {
         background-position: 5% 0;
     }
-    50%{
+    50% {
         background-position: 96% 100%;
     }
-    100%{
+    100% {
         background-position: 5% 0;
     }
 }
-body{
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); 
+body {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(243, 243, 243, 1) 50%,
+        rgba(237, 237, 237, 1) 51%,
+        rgba(255, 255, 255, 1) 100%
+    );
     animation: anima 20s linear infinite;
     background-size: 1000% 1000%;
-    font-family: 'Oswald';
+    font-family: "Oswald";
 }
-.bg-light{
+.bg-light {
     background-color: $navColor !important;
-    .active{
+    .active {
         color: $mainColor !important;
     }
 }
-.imagen img{
-    height: 100vh;
-    width: 100%;
+.imagen {
+    background-image: url("../assets/fondo.jpg");
+    height: 50vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media all and (min-width: 992px) {
+        height: 100vh;
+    }
 }
-.my_Title{
-    a{
+
+.my_Title {
+    a {
         text-decoration: none;
         color: $enlaceColor;
         font-size: 1.5rem;
-        font-weight: map-get($map:$font-weights, $key:medium);
-        @media all and (max-width:$point-md){
+        font-weight: map-get($map: $font-weights, $key: medium);
+        @media all and (max-width: $point-md) {
             font-size: 1.7rem;
         }
     }
 }
-.my_SubTytle{
+.my_SubTytle {
     font-size: 1.3rem;
-    @media all and (max-width:$point-md){
+    @media all and (max-width: $point-md) {
         font-size: 1.5rem;
     }
 }
-#footer{
-    .follow{
-        p{  
-        @include follow($mainColor,$fontSize);
-        @media all and (max-width:$point-md){
-            font-size: 1.5rem;
+#footer {
+    .follow {
+        p {
+            @include follow($mainColor, $fontSize);
+            @media all and (max-width: $point-md) {
+                font-size: 1.5rem;
+            }
         }
-        }
-        @media all and (max-width:$point-md){
+        @media all and (max-width: $point-md) {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
     }
     .social_network {
-        li{
+        li {
             margin-right: 1em;
-            @media all and (max-width:$point-md){
-                margin-bottom: 1em;            
+            @media all and (max-width: $point-md) {
+                margin-bottom: 1em;
             }
-            @media all and (min-width:$point-md){
-                padding-right: 1em;            
+            @media all and (min-width: $point-md) {
+                padding-right: 1em;
             }
-            a{
+            a {
                 text-decoration: none;
                 color: $enlaceColor;
             }
         }
-        @media all and (max-width:$point-md){
+        @media all and (max-width: $point-md) {
             display: flex;
             flex-direction: column;
-            align-items: center;  
+            align-items: center;
         }
     }
-    .rights{
+    .rights {
         font-size: $font-size-rights;
-        @media all and (max-width:$point-md){
+        @media all and (max-width: $point-md) {
             font-size: 0.8rem;
         }
     }
 }
-.margen{
+.margen {
     margin-top: 2em;
-        .box{
-            @media all and (max-width:$point-md){
-                margin-bottom: 3%;
-            }   
-            img{
-                max-width: 80%;
-                border-radius: 2% 2%;
-            }
-            .modal-header{
-                border-bottom: 0;
-            }
-            .modal-footer{
-                border-top: 0;
-            }
+    .box {
+        @media all and (max-width: $point-md) {
+            margin-bottom: 3%;
         }
-        .btn-warning{
-            background-color: #d88e00;
-            border-color: #d88e00;
-            color:#fff;
-            &:hover{
-                background-color: #eba015;
-                border-color: #eba015;
-            }
+        img {
+            max-width: 80%;
+            border-radius: 2% 2%;
         }
-        @media all and (max-width:$point-md){
-            .enviar{
-                margin-bottom: 2em;
-            }
-        } 
+        .modal-header {
+            border-bottom: 0;
+        }
+        .modal-footer {
+            border-top: 0;
+        }
+    }
+    .btn-warning {
+        background-color: #d88e00;
+        border-color: #d88e00;
+        color: #fff;
+        &:hover {
+            background-color: #eba015;
+            border-color: #eba015;
+        }
+    }
+    @media all and (max-width: $point-md) {
+        .enviar {
+            margin-bottom: 2em;
+        }
+    }
 }
-#banner{
+#banner {
     background-image: url(../assets/fondo.nosotros2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     width: 100%;
     background-size: cover;
-    .color_parrafo{
-        color:rgba(248, 248, 248,0.6);
+    .color_parrafo {
+        color: rgba(248, 248, 248, 0.6);
         font-size: 1.5rem;
     }
 }
-.cont_title{
-    @include follow($mainColor,$fontSize);
+.cont_title {
+    @include follow($mainColor, $fontSize);
     margin-bottom: 5%;
     margin-top: 2%;
-    @media all and (max-width:$point-md){
+    @media all and (max-width: $point-md) {
         font-size: 1.5rem;
     }
 }
-@media all and (min-width:992px){
-    .collapse{
+@media all and (min-width: 992px) {
+    .collapse {
         display: flex;
         flex-direction: row;
         justify-content: end;
