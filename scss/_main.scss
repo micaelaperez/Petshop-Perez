@@ -103,6 +103,23 @@ body {
 }
 .margen {
     margin-top: 2em;
+    .form-label {
+        color: rgb(146, 139, 139);
+        font-size: 1.3rem;
+    }
+    @media all and (min-width: 992px) {
+        .tamaño {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 60%;
+            margin: 0 auto;
+        }
+        .form-label {
+            font-size: 1.2rem;
+        }
+    }
+
     .box {
         @media all and (max-width: $point-md) {
             margin-bottom: 3%;
@@ -132,6 +149,11 @@ body {
             margin-bottom: 2em;
         }
     }
+    .btn-enviar {
+        border: 2px solid rgba(146, 139, 139, 0.8);
+        background-color: #fff;
+        margin-bottom: 2em;
+    }
 }
 #banner {
     background-image: url(../assets/fondo.nosotros2.jpg);
@@ -146,9 +168,9 @@ body {
     }
 }
 .cont_title {
-    @include follow($mainColor, $fontSize);
-    margin-bottom: 5%;
-    margin-top: 2%;
+    color: $mainColor;
+    font-size: 2rem;
+    margin-bottom: 2%;
     @media all and (max-width: $point-md) {
         font-size: 1.5rem;
     }
@@ -159,10 +181,6 @@ body {
         flex-direction: row;
         justify-content: end;
     }
-}
-.bloque {
-    margin-left: auto;
-    margin-right: auto;
 }
 .titulo-noticia {
     color: $mainColor;
@@ -195,5 +213,54 @@ body {
     @media all and (min-width: $point-md) {
         padding: 0 6rem;
         font-size: 1.2rem;
+    }
+}
+
+.card {
+    .card-title {
+        color: $mainColor;
+        font-size: 1rem;
+    }
+    .card-date {
+        font-size: 0.6rem;
+        color: rgb(146, 139, 139);
+    }
+    .btn-noticia {
+        width: 100%;
+        border: 2px solid rgba(146, 139, 139, 0.8);
+    }
+    @media all and (max-width: 576px) {
+        margin-bottom: 2rem;
+    }
+}
+.fondo {
+    background-color: rgba(200, 195, 195, 0.2);
+    .contacto_title {
+        font-size: 1.6rem;
+        color: $mainColor;
+    }
+    .contacto_subtytle {
+        font-size: 1.2rem;
+    }
+}
+.imagen-contacto {
+    background-image: url("../assets/fondo-contacto.jpg");
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media all and (min-width: 992px) {
+        height: 100vh;
+    }
+}
+.imagen-agradecimiento {
+    background-image: url("../assets/fondo-agradecimiento.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media all and (max-width: 576px) {
+        background-image: url("../assets/fondo-agradecimiento-810.jpg");
+        height: 50vh;
     }
 }

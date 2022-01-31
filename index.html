@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -60,32 +61,67 @@
   <!--IMAGE-->
   <div class="imagen"></div>
   <!--IMAGE END-->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-6 col-md-8 my_Title">
-        <a href="productos.html">NUESTROS PRODUCTOS</a>
+  <!--CARDS-->
+  <div class="container-fluid pt-5 pb-5">
+    <div class="row wow animate__animated animate__fadeInUp">
+      <div class="col d-flex flex-row justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/perro-relajado.jpg" class="card-img-top" alt="perro relajado">
+          <div class="card-body">
+            <h5 class="card-title">COMO EVITAR EL ESTRES DE NUESTROS PERROS EN LAS FIESTAS DE FIN DE AÑO</h5>
+            <time class="card-date" datetime="20-12-21">20 DE DICIEMBRE DE 2021</time>
+            <p class="card-text">Las reuniones con muchas personas y el uso de pirotecnia pueden perturbar el
+              comportamiento de tu mascota.
+            </p>
+            <a href="./novedades.html#novedad-1" class="btn btn-noticia">Leer más</a>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-6 col-md-4 my_SubTytle">
-        <p>ALIMENTO BALANCEADO</p>
-        <p>JUGUETES</p>
-        <p>PRODUCTOS DE HIGUIENE</p>
+      <div class="col d-flex flex-row justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/gato-comiendo.jpg" class="card-img-top" alt="gato comiendo">
+          <div class="card-body">
+            <h5 class="card-title">COMO DEBEMOS CAMBIAR EL ALIMENTO DE NUESTRO GATO</h5>
+            <time class="card-date" datetime="10-12-21">10 DE DICIEMBRE DE 2021</time>
+            <p class="card-text">Si el veterinario recomienda cambiar la dieta de tu gato es recomendable que le des el
+              alimento nuevo de
+              forma gradual.</p>
+            <a href="./novedades.html#novedad-2" class="btn btn-noticia">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex flex-row justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/perro-mayor.jpg" class="card-img-top" alt="perro mayor">
+          <div class="card-body">
+            <h5 class="card-title">COMO DEBE SER LA ALIMENTACION PARA NUESTRO PERRO DE EDAD AVANZADA</h5>
+            <time class="card-date" datetime="01-11-21">01 DE NOVIEMBRE DE 2021</time>
+            <p class="card-text">Los perros de edad avanzada tienen necesidades nutricionales diferentes a las de los
+              cachorros o adultos</p>
+            <a href="./novedades.html#novedad-3" class="btn btn-noticia">Leer más</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-8 col-sm-12 my_Title">
-        <a href="./nosotros.html">NOSOTROS</a>
+  </div>
+  <!--CARDS END-->
+  <div class="container-fluid pt-5 pb-5 fondo">
+    <div class="row d-flex wow animate__animated animate__fadeInUp">
+      <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center">
+        <h2 class="contacto_title">NUESTRA DIRECCION</h2>
+        <p class="contacto_subtytle">AV SIEMPREVIVA 742</p>
+        <p class="contacto_subtytle">89011, NV</p>
       </div>
-      <div class="col-lg-6 col-md-4 col-sm-12 my_SubTytle">
-        <p>ACERCA DE NOSOTROS</p>
+      <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center">
+        <h2 class="contacto_title">NUESTROS HORARIOS</h2>
+        <p class="contacto_subtytle">LUNES A SABADOS</p>
+        <p class="contacto_subtytle">10 AM - 20 PM</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-8 col-sm-12 my_Title">
-        <a href="./contacto.html">CONTACTO</a>
-      </div>
-      <div class="col-lg-6 col-md-4 col-sm-12 my_SubTytle">
-        <p>DONDE ENCONTRARNOS</p>
-      </div>
+    <div class="row wow animate__animated animate__fadeInUp">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.6605047476905!2d-115.01753188524216!3d36.07738391575198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d0b89793735f%3A0x82738f1bb7cadcb8!2s712%20Red%20Bark%20Ln%2C%20Henderson%2C%20NV%2089011%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1638127009039!5m2!1ses-419!2sar"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </div>
   <!--FOOTER-->
@@ -119,6 +155,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
