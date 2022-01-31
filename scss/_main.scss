@@ -43,23 +43,6 @@ body {
     }
 }
 
-.my_Title {
-    a {
-        text-decoration: none;
-        color: $enlaceColor;
-        font-size: 1.5rem;
-        font-weight: map-get($map: $font-weights, $key: medium);
-        @media all and (max-width: $point-md) {
-            font-size: 1.7rem;
-        }
-    }
-}
-.my_SubTytle {
-    font-size: 1.3rem;
-    @media all and (max-width: $point-md) {
-        font-size: 1.5rem;
-    }
-}
 #footer {
     .follow {
         p {
@@ -68,30 +51,17 @@ body {
                 font-size: 1.5rem;
             }
         }
-        @media all and (max-width: $point-md) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .social_network {
         li {
-            margin-right: 1em;
-            @media all and (max-width: $point-md) {
-                margin-bottom: 1em;
-            }
-            @media all and (min-width: $point-md) {
-                padding-right: 1em;
-            }
+            margin-right: 2em;
             a {
                 text-decoration: none;
                 color: $enlaceColor;
             }
-        }
-        @media all and (max-width: $point-md) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
     }
     .rights {
@@ -106,17 +76,17 @@ body {
     .form-label {
         color: rgb(146, 139, 139);
         font-size: 1.3rem;
+        @media all and (min-width: $point-md) {
+            font-size: 1.2rem;
+        }
     }
-    @media all and (min-width: 992px) {
+    @media all and (min-width: $point-md) {
         .tamaño {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             width: 60%;
             margin: 0 auto;
-        }
-        .form-label {
-            font-size: 1.2rem;
         }
     }
 
@@ -134,54 +104,49 @@ body {
         .modal-footer {
             border-top: 0;
         }
-    }
-    .btn-warning {
-        background-color: #d88e00;
-        border-color: #d88e00;
-        color: #fff;
-        &:hover {
-            background-color: #eba015;
-            border-color: #eba015;
+        .btn-warning {
+            background-color: #d88e00;
+            border-color: #d88e00;
+            color: #fff;
+            &:hover {
+                background-color: #eba015;
+                border-color: #eba015;
+            }
         }
     }
-    @media all and (max-width: $point-md) {
-        .enviar {
-            margin-bottom: 2em;
-        }
-    }
+
     .btn-enviar {
         border: 2px solid rgba(146, 139, 139, 0.8);
         background-color: #fff;
         margin-bottom: 2em;
+        &:hover {
+            background-color: #eba015;
+            border-color: #eba015;
+            color: #fff;
+        }
     }
 }
 #banner {
-    background-image: url(../assets/fondo.nosotros2.jpg);
+    background-image: url("../assets/fondo-nosotros-810.jpg");
+    height: 50vh;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100%;
     background-size: cover;
-    .color_parrafo {
-        color: rgba(248, 248, 248, 0.6);
-        font-size: 1.5rem;
+    @media all and (min-width: 992px) {
+        background-image: url("../assets/fondo-nosotros.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
+
 .cont_title {
     color: $mainColor;
-    font-size: 2rem;
+    font-size: $fontSize-title;
     margin-bottom: 2%;
-    @media all and (max-width: $point-md) {
-        font-size: 1.5rem;
-    }
 }
-@media all and (min-width: 992px) {
-    .collapse {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-    }
-}
+
 .titulo-noticia {
     color: $mainColor;
     font-size: 1.6rem;
@@ -208,7 +173,7 @@ body {
     }
 }
 
-.texto-noticias {
+.texto-noticia {
     font-size: 1.3rem;
     @media all and (min-width: $point-md) {
         padding: 0 6rem;
@@ -217,6 +182,7 @@ body {
 }
 
 .card {
+    margin-bottom: 2rem;
     .card-title {
         color: $mainColor;
         font-size: 1rem;
@@ -225,22 +191,27 @@ body {
         font-size: 0.6rem;
         color: rgb(146, 139, 139);
     }
-    .btn-noticia {
+    .btn-card {
         width: 100%;
         border: 2px solid rgba(146, 139, 139, 0.8);
-    }
-    @media all and (max-width: 576px) {
-        margin-bottom: 2rem;
+        &:hover {
+            background-color: #eba015;
+            border-color: #eba015;
+            color: #fff;
+        }
     }
 }
 .fondo {
     background-color: rgba(200, 195, 195, 0.2);
-    .contacto_title {
-        font-size: 1.6rem;
-        color: $mainColor;
+    .contacto_subtitle {
+        font-size: 1.5rem;
     }
-    .contacto_subtytle {
-        font-size: 1.2rem;
+    .nosotros-parrafo p{
+        font-size: 1.3rem;
+        margin: 0 1.5%;
+        @media all and (min-width: 992px){
+            margin-left: 1%;
+        }
     }
 }
 .imagen-contacto {
@@ -253,14 +224,30 @@ body {
         height: 100vh;
     }
 }
-.imagen-agradecimiento {
-    background-image: url("../assets/fondo-agradecimiento.jpg");
-    height: 100vh;
+#banner-gracias {
+    background-image: url("../assets/fondo-contacto-810.jpg");
+    height: 50vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @media all and (max-width: 576px) {
-        background-image: url("../assets/fondo-agradecimiento-810.jpg");
-        height: 50vh;
+    .gracias-title {
+        font-size: 1.1rem;
+    }
+    .gracias-subtitle {
+        font-size: 0.9rem;
+        margin-left: 3%;
+    }
+    @media all and (min-width: 576px) {
+        background-image: url("../assets/fondo-contacto.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .gracias-title {
+            font-size: 2.5rem;
+        }
+        .gracias-subtitle {
+            font-size: 2rem;
+        }
     }
 }

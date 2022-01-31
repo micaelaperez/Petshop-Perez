@@ -74,27 +74,17 @@ body {
   }
 }
 
-.my_Title a {
-  text-decoration: none;
-  color: #000;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-@media all and (max-width: 768px) {
-  .my_Title a {
-    font-size: 1.7rem;
-  }
-}
-
-.my_SubTytle {
-  font-size: 1.3rem;
-}
-
-@media all and (max-width: 768px) {
-  .my_SubTytle {
-    font-size: 1.5rem;
-  }
+#footer .follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #footer .follow p {
@@ -108,55 +98,13 @@ body {
   }
 }
 
-@media all and (max-width: 768px) {
-  #footer .follow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 #footer .social_network li {
-  margin-right: 1em;
-}
-
-@media all and (max-width: 768px) {
-  #footer .social_network li {
-    margin-bottom: 1em;
-  }
-}
-
-@media all and (min-width: 768px) {
-  #footer .social_network li {
-    padding-right: 1em;
-  }
+  margin-right: 2em;
 }
 
 #footer .social_network li a {
   text-decoration: none;
   color: #000;
-}
-
-@media all and (max-width: 768px) {
-  #footer .social_network {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 #footer .rights {
@@ -178,7 +126,13 @@ body {
   font-size: 1.3rem;
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
+  .margen .form-label {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (min-width: 768px) {
   .margen .tamaño {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -191,9 +145,6 @@ body {
         justify-content: space-around;
     width: 60%;
     margin: 0 auto;
-  }
-  .margen .form-label {
-    font-size: 1.2rem;
   }
 }
 
@@ -216,21 +167,15 @@ body {
   border-top: 0;
 }
 
-.margen .btn-warning {
+.margen .box .btn-warning {
   background-color: #d88e00;
   border-color: #d88e00;
   color: #fff;
 }
 
-.margen .btn-warning:hover {
+.margen .box .btn-warning:hover {
   background-color: #eba015;
   border-color: #eba015;
-}
-
-@media all and (max-width: 768px) {
-  .margen .enviar {
-    margin-bottom: 2em;
-  }
 }
 
 .margen .btn-enviar {
@@ -239,45 +184,34 @@ body {
   margin-bottom: 2em;
 }
 
+.margen .btn-enviar:hover {
+  background-color: #eba015;
+  border-color: #eba015;
+  color: #fff;
+}
+
 #banner {
-  background-image: url(../assets/fondo.nosotros2.jpg);
+  background-image: url("../assets/fondo-nosotros-810.jpg");
+  height: 50vh;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
-  width: 100%;
   background-size: cover;
 }
 
-#banner .color_parrafo {
-  color: rgba(248, 248, 248, 0.6);
-  font-size: 1.5rem;
+@media all and (min-width: 992px) {
+  #banner {
+    background-image: url("../assets/fondo-nosotros.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .cont_title {
   color: #d88e00;
   font-size: 2rem;
   margin-bottom: 2%;
-}
-
-@media all and (max-width: 768px) {
-  .cont_title {
-    font-size: 1.5rem;
-  }
-}
-
-@media all and (min-width: 992px) {
-  .collapse {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
 }
 
 .titulo-noticia {
@@ -317,15 +251,19 @@ body {
   }
 }
 
-.texto-noticias {
+.texto-noticia {
   font-size: 1.3rem;
 }
 
 @media all and (min-width: 768px) {
-  .texto-noticias {
+  .texto-noticia {
     padding: 0 6rem;
     font-size: 1.2rem;
   }
+}
+
+.card {
+  margin-bottom: 2rem;
 }
 
 .card .card-title {
@@ -338,28 +276,34 @@ body {
   color: #928b8b;
 }
 
-.card .btn-noticia {
+.card .btn-card {
   width: 100%;
   border: 2px solid rgba(146, 139, 139, 0.8);
 }
 
-@media all and (max-width: 576px) {
-  .card {
-    margin-bottom: 2rem;
-  }
+.card .btn-card:hover {
+  background-color: #eba015;
+  border-color: #eba015;
+  color: #fff;
 }
 
 .fondo {
   background-color: rgba(200, 195, 195, 0.2);
 }
 
-.fondo .contacto_title {
-  font-size: 1.6rem;
-  color: #d88e00;
+.fondo .contacto_subtitle {
+  font-size: 1.5rem;
 }
 
-.fondo .contacto_subtytle {
-  font-size: 1.2rem;
+.fondo .nosotros-parrafo p {
+  font-size: 1.3rem;
+  margin: 0 1.5%;
+}
+
+@media all and (min-width: 992px) {
+  .fondo .nosotros-parrafo p {
+    margin-left: 1%;
+  }
 }
 
 .imagen-contacto {
@@ -376,18 +320,36 @@ body {
   }
 }
 
-.imagen-agradecimiento {
-  background-image: url("../assets/fondo-agradecimiento.jpg");
-  height: 100vh;
+#banner-gracias {
+  background-image: url("../assets/fondo-contacto-810.jpg");
+  height: 50vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-@media all and (max-width: 576px) {
-  .imagen-agradecimiento {
-    background-image: url("../assets/fondo-agradecimiento-810.jpg");
-    height: 50vh;
+#banner-gracias .gracias-title {
+  font-size: 1.1rem;
+}
+
+#banner-gracias .gracias-subtitle {
+  font-size: 0.9rem;
+  margin-left: 3%;
+}
+
+@media all and (min-width: 576px) {
+  #banner-gracias {
+    background-image: url("../assets/fondo-contacto.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #banner-gracias .gracias-title {
+    font-size: 2.5rem;
+  }
+  #banner-gracias .gracias-subtitle {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
