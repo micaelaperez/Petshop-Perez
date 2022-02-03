@@ -65,24 +65,24 @@
         <div class="row">
             <div class="col margen wow animate__animated animate__fadeInUp animate__delay-2ms">
                 <h2 class="cont_title text-center">CONTACTO</h2>
-                <form class="d-flex flex-column tamaño" action="./gracias.html" method="post">
+                <form class="d-flex flex-column tamaño" action="./gracias.html" method="POST">
                     <div class="form-group">
                         <label class="form-label" for="nombre">Nombre</label>
-                        <input class="form-control mb-2" name="nombre" type="text" required>
+                        <input class="form-control mb-2" type="text" name="nombre" id="nombre" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="email">Email</label>
-                        <input class="form-control mb-2" name="email" type="email" required>
+                        <input class="form-control mb-2" type="email" name="email" id="email" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="telefono">Telefono</label>
-                        <input class="form-control mb-2" name="telefono" type="tel">
+                        <input class="form-control mb-2" type="tel" name="telefono" id="telefono">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="mensaje">Escriba su mensaje</label>
-                        <textarea class="form-control mb-2" name="mensaje" required></textarea>
+                        <textarea class="form-control mb-2" name="mensaje" id="mensaje" required></textarea>
                     </div>
-                    <input class="btn btn-enviar" name="enviar" type="submit" value="Enviar">
+                    <input class="btn btn-enviar" type="submit" value="Enviar">
                 </form>
             </div>
         </div>
